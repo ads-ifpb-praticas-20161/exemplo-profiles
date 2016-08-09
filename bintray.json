@@ -1,0 +1,24 @@
+{
+    "package": {
+        "name": "exemplo-profiles",
+        "repo": "maven",
+        "subject": "ads-ifpb-praticas",
+        "desc": "I was pushed completely automatically",
+        "website_url": "https://github.com/ads-ifpb-praticas-20161",
+        "issue_tracker_url": "https://github.com/ads-ifpb-praticas-20161/exemplo-profiles/issues",
+        "vcs_url": "https://github.com/ads-ifpb-praticas-20161/exemplo-profiles.git",
+        "licenses": ["MIT"],
+        "labels": ["ifpb", "praticas", "programação"],
+        "public_download_numbers": true,
+        "public_stats": true,
+    },
+
+    "version": {
+        "name": "${project.version}",
+        "desc": "${project.description}",
+        "released": "${maven.build.timestamp}",
+        "vcs_tag": "0.5",
+        "gpgSign": false
+    },
+    "publish": true
+}
