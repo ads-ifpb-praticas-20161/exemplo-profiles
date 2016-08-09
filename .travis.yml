@@ -4,8 +4,8 @@ jdk:
 
 branches:
   only:
-    envHOMOLOG
-    bDEPLOY
+  - envHOMOLOG
+  - bDEPLOY
 
 install: mvn install -U -DskipTests=true
 script:
