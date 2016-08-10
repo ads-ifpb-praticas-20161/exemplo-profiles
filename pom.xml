@@ -4,7 +4,7 @@
 
   <groupId>br.edu.ifpb.profiles</groupId>
   <artifactId>exemplo-profiles</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>war</packaging>
 
   <dependencies>
@@ -198,6 +198,13 @@
                     </plugin>
                 </plugins>
             </build>
+            <distributionManagement>
+                <repository>
+                    <id>bintray-ads-ifpb-praticas-maven</id>
+                    <name>ads-ifpb-praticas-maven</name>
+                    <url>https://api.bintray.com/maven/ads-ifpb-praticas/maven/exemplo-profiles/;publish=1</url>
+                </repository>
+            </distributionManagement>
         </profile>
     </profiles>
 

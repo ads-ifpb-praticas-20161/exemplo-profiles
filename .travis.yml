@@ -1,15 +1,9 @@
 language: java
 jdk:
   - oraclejdk8
-
+branches:
+  only:
+  - /^v.*$/
 install: mvn clean
 script:
-  mvn integration-test verify -Ptest
-deploy:
-  provider: bintray
-  file: "descriptor.json"
-  user: "diogomoreira"
-  key: "2c41c9bb9c2f0cfa1b5f942fc7b176a02eaa3904"
-  tags: true
-  on:
-    branch: DEPLOY
+  mvn integration-test verify deploy -Ptest
