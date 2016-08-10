@@ -2,12 +2,11 @@
     "package": {
         "name": "exemplo-profiles", // Bintray package name
         "repo": "maven", // Bintray repository name
-        "subject": "ads-ifpb-praticas", // Bintray subject (user or organization)
+        "subject": "ads-ifpb-praticas" // Bintray subject (user or organization)
     },
     "version": {
         "name": "1.0"
     },
-
     "files":
         [
         {"includePattern": "target/(.*)", "excludePattern": "target/.*.zip$", "uploadPattern": "/$1"}
