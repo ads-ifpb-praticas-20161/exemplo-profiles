@@ -6,4 +6,4 @@ branches:
   - /^v.*$/
 install: mvn clean
 script:
-  mvn integration-test verify deploy -Ptest
+  mvn integration-test verify deploy -Ptest --settings settings.xml
