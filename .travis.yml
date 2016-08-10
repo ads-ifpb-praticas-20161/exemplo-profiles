@@ -10,8 +10,7 @@ install: mvn install -U -DskipTests=true
 script:
   mvn integration-test verify -Ptest
 deploy:
-  provider: heroku
-  api_key:
-    secure: "788442021d5a77c91b8cca89db466f9e491d1d9b" # API Key, encontrado em Account Settings
-  on: envHOMOLOG # Configuração de branch
-  app: secure-escarpment-22257 # Nome da app no Heroku
+  provider: bintray
+  file: "descriptor.json"
+  user: "diogomoreira"
+  key: "2c41c9bb9c2f0cfa1b5f942fc7b176a02eaa3904"
